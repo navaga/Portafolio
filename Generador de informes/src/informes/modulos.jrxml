@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="342f439c-a50f-4360-bb68-6ec0640ac76f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="modulo" class="java.lang.String"/>
+	<group name="modulo">
+		<groupExpression><![CDATA[$F{modulo}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="27" y="0" width="469" height="79" forecolor="#990000" uuid="3b8b0015-407d-4304-9557-0b94a843ee48"/>
+				<textElement>
+					<font size="30"/>
+				</textElement>
+				<text><![CDATA[INFORME DE BARRAS DE MATRICULACION DE MODULOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="424" splitType="Stretch">
+			<bar3DChart>
+				<chart>
+					<reportElement x="46" y="36" width="450" height="330" uuid="a3026545-3b40-4ffa-a3f1-09ec425eb710"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{modulo}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{modulo}]]></categoryExpression>
+						<valueExpression><![CDATA[$V{modulo_COUNT}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</summary>
+</jasperReport>

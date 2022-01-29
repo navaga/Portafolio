@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="be6b3904-bce9-49f3-9082-560050eeac0a">
+	<property name="net.sf.jasperreports.chart.pie.ignore.duplicated.key" value="true"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="modulo" class="java.lang.String"/>
+	<group name="modulo">
+		<groupExpression><![CDATA[$F{modulo}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79" forecolor="#CC0000" uuid="14bcf320-6000-48a0-a67f-0341ce6e2ac4"/>
+				<textElement>
+					<font size="30" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[INFORME DE SELECTORES DE MATRICULACION DE MODULOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="381" splitType="Stretch">
+			<pieChart>
+				<chart>
+					<reportElement x="22" y="24" width="509" height="325" uuid="eb20f24c-be39-4e84-9ef5-bfd2396b94c0"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{modulo}]]></keyExpression>
+					<valueExpression><![CDATA[$V{modulo_COUNT}]]></valueExpression>
+					<labelExpression><![CDATA[$V{modulo_COUNT}.toString()]]></labelExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,8 @@
+0;juan0;0;fresas0
+1;juan1;5;fresas1
+3;paco;50;aluminio
+4;juan4;20;fresas4
+7;juan0;0;fresas0
+8;juan1;5;fresas1
+9;paco;50;aluminio
+10;juan4;20;fresas4

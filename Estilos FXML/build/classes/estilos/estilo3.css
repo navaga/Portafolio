@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-nov-2021, 12:46:53
+    Author     : navag
+*/
+
+Button {
+    -fx-border-radius: 15px; /* redondear bordes*/
+    -fx-background-color: #02CF08;  /* Color de fondo de los botones */
+    -fx-border-color: #FFFFFF;      /* Borde de color blanco */
+    -fx-border-width: 2;            /* Grosor del borde 2px */
+    -fx-text-fill: #FC0;         /* Color del texto de los botones */
+    -fx-font-family: "Comic Sans MS"; /* Tipo de letra */
+    -fx-font-size: 24px;           /* Tamaño de letra 24px */
+
+
+}
+/*Fondo*/         
+#fondo {-fx-background-color: #660099; }
+#textoapp{
+    -fx-font-family: "Berlin Sans FB"; /* Tipo de letra */
+    -fx-font-size: 36px;           /* Tamaño de letra 36px */
+    -fx-text-fill: #FFFFFF;      /* color texto */
+    -fx-font-style: italic;         /* Estilo de letra inclinado */
+}
+#creado{
+    -fx-font-family: "Berlin Sans FB"; /* Tipo de letra */
+    -fx-font-size: 12px;           /* Tamaño de letra 12px */
+    -fx-text-fill: #0097D7;      /* color texto */
+
+}
+
+/* cambia el color de fondo a azul cuando el puntero del ratón está encima */
+Button:hover { 
+    -fx-background-color: #333;
+    -fx-font-size: 22px;  
+
+} Button:pressed {-fx-background-color: #ffffff;
+                  -fx-text-fill: #000000;
+                  -fx-font-weight: bold; 
+}

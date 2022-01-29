@@ -1,0 +1,7 @@
+1;jamon;500;comida;
+2;choped;50;embutido;
+3;Mierda;9875;Embolsada
+11;prueba;300;prueba33
+4;escroto;3333;de hombre
+5;yeah ;58;maracuyeah
+6;MEAO;500;CAGAO

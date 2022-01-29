@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="fondo" fx:id="panel" prefHeight="440.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di_tarea4.FXMLDocumentController">
+   <children>
+      <Button layoutX="31.0" layoutY="162.0" mnemonicParsing="false" onAction="#estilo1" prefHeight="32.0" prefWidth="327.0" text="Aplicar estilo 1" />
+      <Button layoutX="31.0" layoutY="218.0" mnemonicParsing="false" onAction="#estilo2" prefHeight="32.0" prefWidth="327.0" text="Aplicar estilo 2" />
+      <Button layoutX="31.0" layoutY="275.0" mnemonicParsing="false" onAction="#estilo3" prefHeight="32.0" prefWidth="327.0" text="Aplicar estilo 3" />
+      <Label id="textoapp" alignment="CENTER" layoutX="26.0" layoutY="95.0" prefHeight="30.0" prefWidth="327.0" text="Aplicación de estilos">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label id="creado" layoutX="202.0" layoutY="369.0" prefHeight="32.0" prefWidth="163.0" text="Creacion de estilo hecha por: " />
+      <Label id="creado" layoutX="245.0" layoutY="401.0" text="Ignacio Valero Garcia" />
+      <MenuBar layoutY="-1.0" prefHeight="25.0" prefWidth="379.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="_Archivo">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#resetear" text="Resetear">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+              <MenuItem mnemonicParsing="false" onAction="#salir" text="Salir">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="A_yuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#acercaDe" text="Acerca de..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

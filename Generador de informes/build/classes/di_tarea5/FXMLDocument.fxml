@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="238.0" prefWidth="211.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di_tarea5.FXMLDocumentController">
+    <children>
+      <VBox alignment="CENTER" prefHeight="238.0" prefWidth="211.0">
+         <children>
+            <Label text="Generador de informes" textFill="RED">
+               <padding>
+                  <Insets top="-10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Button mnemonicParsing="false" onAction="#mostrarAlumnos" prefHeight="25.0" prefWidth="130.0" text="Matriculados en di">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#mostrarGraficoCirculo" prefHeight="25.0" prefWidth="131.0" text="Grafico por sectores">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+              <Button fx:id="mostrarGrafico" onAction="#mostrarGrafico" prefHeight="25.0" prefWidth="132.0" text="Grafico de barras">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="136.0" text="Salir">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

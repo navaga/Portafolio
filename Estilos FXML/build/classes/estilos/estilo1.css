@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-nov-2021, 11:40:07
+    Author     : navag
+*/
+
+Button {
+    -fx-border-radius: 15px; /* redondear bordes*/
+    -fx-background-color: #008287;  /* Color de fondo de los botones */
+    -fx-border-color: #FFFFFF;      /* Borde de color blanco */
+    -fx-border-width: 2;            /* Grosor del borde 2px */
+    -fx-text-fill: #FFF;         /* Color del texto de los botones */
+    -fx-font-family: "Times New Roman"; /* Tipo de letra */
+    -fx-font-size: 28px;           /* Tamaño de letra 28px */
+    -fx-font-style: italic; 
+
+
+}
+/*Fondo*/         
+#fondo {-fx-background-color: #000000; }
+#textoapp{
+    -fx-font-family: "Helvetica"; /* Tipo de letra */
+    -fx-font-size: 36px;           /* Tamaño de letra 36px */
+    -fx-text-fill: #FFFFFF;      /* color texto */
+    -fx-font-style: italic;         /* Estilo de letra inclinado */
+}
+#creado{
+    -fx-font-family: "Helvetica"; /* Tipo de letra */
+    -fx-font-size: 12px;           /* Tamaño de letra 12px */
+    -fx-text-fill: #ffff00;      /* color texto */
+
+}
+
+/* cambia el color de fondo cuando el puntero del ratón está encima */
+Button:hover { 
+    -fx-background-color: #333;
+    -fx-font-size: 22px;  
+
+} 
+/*presionado sobre un botón el color de fondo cambiará , el color de texto y el estilo bold*/
+Button:pressed {-fx-background-color: #ffffff;
+                -fx-text-fill: #000000;
+                -fx-font-weight: bold; 
+}

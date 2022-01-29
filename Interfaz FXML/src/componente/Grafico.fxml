@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="219.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="componente.GraficoController">
+   <children>
+      <Label layoutX="55.0" layoutY="43.0" text="Nombre" />
+      <Label layoutX="55.0" layoutY="93.0" text="Apellido" />
+      <Label layoutX="55.0" layoutY="141.0" text="DNI" />
+      <TextField fx:id="tfNombre" layoutX="55.0" layoutY="68.0" />
+      <TextField fx:id="tApellido" layoutX="55.0" layoutY="110.0" />
+      <TextField fx:id="tDni" layoutX="55.0" layoutY="166.0" />
+   </children>
+</AnchorPane>

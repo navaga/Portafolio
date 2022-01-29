@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Tarea5">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="564.0" yPosition="25.0">
+      <Fields>
+        <Field name="dni" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+        <Field name="Telefono" type="String" visibility="private"/>
+        <Field name="fechaNaci" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Clientes" package="" visibility="public" xPosition="984.0" yPosition="227.0">
+      <Fields>
+        <Field name="ocupacionLaboral" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Empleados" package="" visibility="public" xPosition="99.0" yPosition="227.0">
+      <Fields>
+        <Field name="sueldoMensual" type="double" visibility="private"/>
+        <Field name="fechaContratacion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Directivos" package="" visibility="public" xPosition="106.0" yPosition="499.0">
+      <Fields>
+        <Field name="categoriaLaboral" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Empresa" package="" visibility="public" xPosition="564.0" yPosition="227.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="anoFundacion" type="String" visibility="private"/>
+        <Field name="sede" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Proveedor" package="" visibility="public" xPosition="564.0" yPosition="499.0">
+      <Fields>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+        <Field name="telefono" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Producto" package="" visibility="public" xPosition="994.0" yPosition="508.0">
+      <Fields>
+        <Field name="codigoProducto" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Tiene" source="Empresa" target="Clientes" type="Aggregation" sourceCardinality="0..1" targetCardinality="0..*" collectionType="List"/>
+    <UseRelation name="suministra" source="Proveedor" target="Empresa" sourceCardinality="1..*" targetCardinality="1..*"/>
+    <IsRelation name="is" source="Clientes" target="Persona"/>
+    <UseRelation name="Vende" source="Proveedor" target="Producto" sourceCardinality="1..*" targetCardinality="1..*"/>
+    <IsRelation name="is" source="Directivos" target="Empleados"/>
+    <HasRelation name="" source="Empresa" target="Empleados" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="Empleados" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
